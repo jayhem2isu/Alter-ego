@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Alter Ego | Guide</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<link rel="icon" href="group.png">
+		<link rel="stylesheet" href="css/guide.css">
+    </head>
+    <body>
+        <div class="page">
+            
+            <header>
+                <div class='menu'>
+                    <button type="button" role="button" aria-label="Toggle Navigation" class="lines-button x" id="navButton">
+                    <span class="lines"></span>
+                    </button>
+                    <div class="logo">
+                        <a href="#"><img src="logo.png"></a>          
+                    </div>
+                    <nav class="nav-header">
+                        <div class="main-menu">
+                            <a href="#">Explore</a>
+                            <a href="#">Guide</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </nav>
+                    <div class="login-box">
+                                    
+                    </div>
+                </div>
+            </header>
+
+            <section class="section jumbotron"></section>
+
+                    
+        </div>
+
+    </body>
+
+    <script src="js/jquery-3.1.1.js"></script>
+	<script src="js/app.js"></script>
+	
+	<script>
+			document.getElementById('navButton').onclick = function () {
+		
+			  var className = ' ' + navButton.className + ' ';
+		
+			  if (~className.indexOf(' close ')) {
+				this.className = className.replace(' close ', ' ');
+				document.getElementsByClassName('nav-header')[0].style.display = 'none';
+				document.getElementsByClassName('login-box')[0].style.display = 'none';
+			  } else {
+				this.className += ' close';
+				document.getElementsByClassName('nav-header')[0].style.display = 'block';
+				document.getElementsByClassName('login-box')[0].style.display = 'block';
+			  }
+			}
+	</script>
+    
+    
+</html>

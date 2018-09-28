@@ -214,6 +214,54 @@ letter-spacing: 0.1em;
 		background-size: cover;
 	 
 }
+.footer{
+	
+	background:#003366;
+	margin-top:10%;
+}
+.footer{
+	display:flex;
+	flex-wrap: wrap;
+	color:#d1d1d1;
+	padding-top:30px;
+	padding-left:10%;
+	padding-right: 10%;
+}
+.footer-menu>h4,.social>h4,.more-links>h4{
+	color:#FFDB58;
+}
+.footer>div{
+	width:100%;
+}
+.footer-menu>ul, .social>ul,.more-links>ul{
+	padding-left: 1%;
+	padding-top:10px;
+	list-style: none;
+}
+.footer-menu>ul>li, .social>ul>li,.more-links>ul>li{
+	padding-top: 1px;
+}
+.footer-menu,.social,.more-links{
+	font-size:16px;
+}
+.social>ul>li>.fa{
+	width:20px;
+}
+.footer-sub{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-sub>div{
+	padding-top: 10px;
+	width:100%;
+	padding-left:5%;
+}
+#copyright{
+	margin-top: 40px;;
+	text-align:center;
+	font-size:14px;
+	color:#888;
+}
  /* Tablet Styles */
  @media only screen and (min-width: 601px) and (max-width: 960px) {
 body {
@@ -223,6 +271,17 @@ body {
 	height:60vh;
 }
 
+.footer>div{
+	width:100%;
+}
+.footer-sub{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-sub>div{
+	width:calc(100%/3);
+	padding-left:5%;
+}
 }
 
  /* Desktop Styles */
@@ -289,13 +348,27 @@ font-weight: 500;
 
 
 .footer{
-	background:#003366;
-	margin-top:10%;
-	height:30vh;
+	display:block;
+	color:#d1d1d1;
+	padding-top:30px;
+	padding-left:10%;
+	padding-right: 10%;
 }
 .footer>div{
-	width:calc(100%/3)
+	width:100%;
 }
+.footer-sub{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-sub>div{
+	width:calc(100%/3);
+	padding-left:5%;
+}
+.footer-menu>ul, .social>ul,.more-links>ul{
+	padding-top:4px;
+}
+
 
 .jumbotron{
 	height:100vh;
